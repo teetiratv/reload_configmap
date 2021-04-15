@@ -34,14 +34,14 @@ spec:
             httpGet:
               port: 8080
               path: /actuator/health
-            periodSeconds: 30
-            initialDelaySeconds: 60
+            periodSeconds: 5
+            initialDelaySeconds: 3
           readinessProbe:
             failureThreshold: 3
             successThreshold: 1
             httpGet:
               port: 8080
               path: /actuator/health
-            periodSeconds: 30
-            initialDelaySeconds: 60
+            periodSeconds: 5
+            initialDelaySeconds: 3
 status: { }
