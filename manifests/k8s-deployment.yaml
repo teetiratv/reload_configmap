@@ -33,7 +33,7 @@ spec:
             successThreshold: 1
             httpGet:
               port: 8080
-              path: /actuator/health
+              path: /actuator/health/liveness
             periodSeconds: 30
             initialDelaySeconds: 10
           readinessProbe:
@@ -41,7 +41,7 @@ spec:
             successThreshold: 1
             httpGet:
               port: 8080
-              path: /actuator/health
+              path: /actuator/health/readiness
             periodSeconds: 30
             initialDelaySeconds: 10
 status: { }
